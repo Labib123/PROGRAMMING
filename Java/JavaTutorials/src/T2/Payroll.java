@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 // Write a program that contains variables that hold 
 // an hourly pay rate and number of hours worked. 
@@ -8,6 +7,8 @@ import java.util.Scanner;
 // which is 15 percent of the gross pay, and the net pay
 // (gross pay – withholding tax). 
 // Save the program as Payroll.java.
+package T2;
+import java.util.Scanner;
 public class Payroll {
     
     public static void main(String[] args){

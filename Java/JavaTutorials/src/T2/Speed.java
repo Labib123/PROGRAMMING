@@ -6,7 +6,7 @@
 // travelled (in km) and time taken (in hour) respectively.
 //Both variables’ values are to be entered through 
 // keyboard. Save the program as Speed.java.
-
+package T2;
 import java.util.Scanner;
 
 public class Speed {

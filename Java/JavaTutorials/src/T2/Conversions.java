@@ -1,6 +1,8 @@
 // Write a program that will convert a measurement in cm 
 // into m and cm, both measurements are integers.
 // (Hint: 100 cm = 1 m, use % and /).
+
+package T2;
 public class Conversions {
     public static void main(String[] args){
         int measurein_cm = 1050;

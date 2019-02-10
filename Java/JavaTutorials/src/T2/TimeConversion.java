@@ -7,6 +7,7 @@
 // 3601 seconds = 1 hours 0 minutes 1 seconds
 // 7200 seconds = 2 hours 0 minutes 0 seconds
 // Hint: Use only operator such as % and /
+package T2;
 public class TimeConversion {
     
     public static void main(String[] args){
