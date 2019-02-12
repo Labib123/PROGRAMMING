@@ -22,7 +22,7 @@ public class Purchase {
         
         if(quantity <=5){
             discount = 0;
-        } else if ( quantity >=6 && quantity <=20){
+        } else if ( quantity <=20){
             discount = 0.1f * totalAmount;
         }
         else {
