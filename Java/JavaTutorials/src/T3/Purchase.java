@@ -20,20 +20,25 @@ public class Purchase {
         
         totalAmount = unitprice * quantity;
         
-        if(quantity <=5){
-            discount = 0;
-        } else if ( quantity <=20){
-            discount = 0.1f * totalAmount;
+        if ( quantity <=0 ){
+            System.out.println(" Invalid quantity");
         }
         else {
-            discount = 0.15f * totalAmount;
+            if(quantity <=5){
+                discount = 0;
+        } else if ( quantity <=20){
+                discount = 0.1f * totalAmount;
+        }
+                else {
+                discount = 0.15f * totalAmount;
         }
         
-        amountPaid = totalAmount - discount;
-        System.out.println("Unit price " + unitprice);
-        System.out.println("Quantity " +  quantity);
-        System.out.println("Discount " +  discount);        
-        System.out.println(" Amount  paid " + amountPaid );
+            amountPaid = totalAmount - discount;
+            System.out.println("Unit price " + unitprice);
+            System.out.println("Quantity " +  quantity);
+            System.out.println("Discount " +  discount);        
+            System.out.println(" Amount  paid " + amountPaid );
+        }
         
         
         
