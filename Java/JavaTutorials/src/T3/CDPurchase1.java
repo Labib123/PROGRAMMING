@@ -3,7 +3,7 @@ package T3;
 
 import java.util.Scanner;
 
-public class CDPurchase {
+public class CDPurchase1 {
     
     public static void main( String[] args){
         

@@ -3,7 +3,7 @@ package T3;
 
 import java.util.Scanner;
 
-public class CDPurchase {
+public class CDPurchase2 {
     
     public static void main( String[] args){
         
@@ -18,15 +18,17 @@ public class CDPurchase {
         System.out.print( " Quantity of CD-R disks? ");
         quantity = input.nextInt();
         
+        totalPrice = sellingPrice * quantity; 
+        
         if ( quantity <= 5) {
-            totalPrice = sellingPrice * quantity;            
+            discount = 0;                       
         }
-        if ( quantity >=6 && quantity <=20) {
-             totalPrice = sellingPrice * quantity;
+        else if ( quantity >=6 && quantity <=20) {
+             
              discount = 0.1f * totalPrice ;           
         }
-        if ( quantity > 20) {
-              totalPrice = sellingPrice * quantity;
+        else {
+             
              discount = 0.15f * totalPrice ;
                               
         }
