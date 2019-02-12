@@ -18,7 +18,7 @@ public class SwitchCase {
         System.out.println( " Enter integer 2: ");
         num2 = input.nextInt();
         
-        System.out.println( " + for Addition /n - for Subtraction ");
+        System.out.println( " + for Addition /n - for Subtraction /n / for division");
         System.out.print(" Enter choice: ");
         choice = input.next().charAt(0);
         
@@ -31,7 +31,16 @@ public class SwitchCase {
             case '-' :
                 result = num1 - num2;
                 System.out.println(" Difference : " + result);
-                break;            
+                break;  
+                
+             case '/' :
+                result = num1 / num2;
+                System.out.println(" Division : " + result);
+                break; 
+                
+            default :
+               System.out.println(" Invalid choice " );
+                
         }
         
     }
