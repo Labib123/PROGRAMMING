@@ -12,11 +12,12 @@ public class RepetetiveAddition {
         
         int count = 0;
         int  MAX = 10;
+        int score =0;
         
         Scanner kbd = new Scanner(System.in);
         
         
-        while (count <= MAX) {
+        while (count < MAX) {
               num1 = (int) ( Math.random() * 10 );
               num2 = (int) ( Math.random() * 10 );
                System.out.print(" What is  " + num1 + "  + "
@@ -24,14 +25,18 @@ public class RepetetiveAddition {
                
         int userAnswer = kbd.nextInt();
         
-        if ( userAnswer == ( num1 + num2))
+        if ( userAnswer == ( num1 + num2)) {
             System.out.println(" Your answer is correct!");
+            score++;
+        }
         else
             System.out.println( " Oops The Answer is " + (num1 + num2));
         
         count++;             
               
         }
+        // TODO : Give the appropriate instructions based on user score
+        //if ( score )
         
         
       
