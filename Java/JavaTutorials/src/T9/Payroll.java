@@ -20,10 +20,15 @@ public class Payroll {
             System.out.println( " Enter salary of Emp-" + (i+1) );
             salary[i] = input.nextDouble();   
             totalSalary = totalSalary + salary[i];
+            if(salary[i] > highestSalary){
+                highestSalary = salary[i] ; 
+            }
         }
         
-        System.out.println( " Total Salary : " + totalSalary);
         
+        System.out.println( " Total Salary : " + totalSalary);
+        System.out.println("Hightst salary: " + highestSalary );
+
         
         
         
