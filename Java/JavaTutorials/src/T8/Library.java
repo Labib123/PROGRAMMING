@@ -9,14 +9,14 @@ public class Library {
         Book b2 = new Book("C++ Fundamentals" , " herbert" , 60);
         
         b1.borrowBook();
-        b1.toString();
-        b2.toString();
+        System.out.println(b1.toString());
+        System.out.println(b2.toString());
         b2.borrowBook();
-        b2.toString();
+        System.out.println(b2.toString());
         b1.returnBook();
-        b1.toString();
+        System.out.println(b1.toString());
         b2.returnBook();
-        b2.toString();
+        System.out.println(b2.toString());
                
         
  
