@@ -15,6 +15,7 @@ public class Book {
         // this.author = author;
         author = a;
         this.price = price;
+        onLoan = false;
         
     }
     
@@ -24,5 +25,28 @@ public class Book {
     
     String getTitle(){
         return title;
+    }
+    
+    void borrowBook() {
+        onLoan = true;        
+    }
+    void returnBook() {
+        onLoan = false;        
+    }
+    
+    private boolean isAvailable(){
+        return !onLoan;
+    }
+    
+    public String toString(){
+
+        if ( isAvailable())
+            return (title + " by " + author + " cost: " + price 
+                + " is currently available for loan");
+        else
+            return (title + " by " + author + " cost: " + price 
+                + " is already borrowed");
+            
+    
     }
 }
